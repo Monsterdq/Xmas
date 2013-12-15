@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+  margin: 0;
+  padding: 0;
+}
+li{ list-style:none}
+html, body{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color:#a82022;
+  overflow: hidden;
+}
+.ground{ width:100%; height:50px; background:#FFF; position:absolute; bottom:0; z-index:5}
+#snow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index:999;
+}
+/****************snow******************/
+.snowflake {
+	position: absolute;
+	display: block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	z-index:999;
+
+	background-image: -webkit-radial-gradient(
+		center,
+		circle farthest-corner,
+		rgba(255, 255, 255, 1) 40%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	background-image: -moz-radial-gradient(
+		center,
+		circle farthest-corner,
+		rgba(255, 255, 255, 1) 40%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	background-image: -ms-radial-gradient(
+		center,
+		circle farthest-corner,
+		rgba(255, 255, 255, 1) 40%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	background-image: radial-gradient(
+		center,
+		circle farthest-corner,
+		rgba(255, 255, 255, 1) 40%,
+		rgba(255, 255, 255, 0) 100%
+	);
+}
+
+.bell{ 
+	animation:roll 5s linear infinite;
+	width:100px; position:absolute; 
+	left:200px;  top:-30px
+}
+.line{ 
+	width:1px; 
+	height:200px; 
+	border-left:5px dashed #FFFFFF; 
+	position:absolute
+	}
+.bell1{ 
+	width:100px; height:100px; 
+	background:#FFF; border-radius:50px; 
+	box-shadow: 0px 0px 20px rgba(255,255,255,0.6); 
+	position:absolute; top:180px; 
+	left:-50px;
+	}
+
+.bell1 span{ 
+	width:6px; height:70px; 
+	background:#d6c091; 
+	display:block; 
+	position:absolute;
+	}
+.bell1 span:nth-child(1){ 
+	top:15px; left:47px; 
+	transform:rotate(-60deg);
+}
+.bell1 span:nth-child(2){ 
+	top:15px; left:47px; 
+	transform:rotate(60deg);
+}
+.bell1 span:nth-child(3){ 
+	top:15px; 
+	left:47px; 
+	transform:rotate(5deg);
+}
+
+.tree{ 
+	width:300px; 
+	height:500px;
+	left:350px; 
+	position:absolute; 
+	bottom:50px;}
+.tree .tree-bo{
+	width: 0px;
+	height: 0px;
+	border-left: 150px solid transparent;
+	border-bottom: 150px solid #2a665c;
+	border-right: 150px solid transparent;
+	position: absolute;
+	
+}
+.tree .top{ 
+	left: 0px;
+	top: 50px;
+	z-index:5;
+	}
+.tree .mid{
+	left: 0px;
+	top: 150px;
+	z-index:4;
+}
+.tree .bot{
+	left: 0px;
+	top: 230px;
+	z-index:3
+}
+.shadow{ 
+	width:300px; 
+	height:5px; 
+	box-shadow:0px 5px 5px rgba(0,0,0,0.6); 
+	position:absolute; 
+	left:-150px; 
+	top:145px;
+}
+.wood{
+	width: 70px;
+	height: 200px;
+	background: #6b5929;
+	position: absolute;
+	left: 110px;
+	top: 342px;
+	z-index:2;
+}
+.wood .w-shadow{ 
+	width:5px; 
+	height:200px; 
+	background:#5c4c23; 
+	position:absolute; 
+	right:0;}
+.wood .w-botshadow{ 
+	width:70px; 
+	height:5px; 
+	background:#5c4c23; 
+	position:absolute; 
+	bottom:0;
+	}
+.tree ul li{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	position: absolute;
+	z-index: 6;
+	left: 126px;
+	top: 118px;
+}
+
+.present{ 
+	width:60px; 
+	height:60px; 
+	background:#821315; 
+	position:absolute; 
+	left:570px; bottom:50px; 
+	cursor:pointer}
+.r-shadow{ 
+	width:10px; 
+	height:60px; 
+	position:absolute; 
+	right:0; 
+	background:#751113}
+.golden1{ 
+	width:7px; 
+	height:60px; 
+	background:#e5b239; 
+	position:absolute; 
+	right:20px;}
+.golden2{ 
+	width:60px; 
+	height:5px; 
+	background:#e5b239; 
+	position:absolute; 
+	top:30px;
+	}
+.make{ 
+	position:absolute; 
+	width:100px; 
+	top:-20px; 
+	color:#fff; 
+	font-size:14px; 
+	left:-10px; 
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.xmas{ 
+	font-size:72px; 
+	color:#fff; 
+	position:absolute; 
+	left:700px; 
+	top:100px; 
+	opacity:0;}
+.f48{ 
+	font-size:48px; 
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	}
+.f24{ 
+	font-size:24px; 
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+@keyframes roll{ 
+	0{ transform:rotate(0deg)}
+	25%{ transform:rotate(30deg)}
+	50%{ transform:rotate(0deg)}
+	75%{ transform:rotate(-30deg)}
+	100%{ transform:rotate(0deg)}
+}

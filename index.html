@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Xmas</title>
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/prefixfree.min.js"></script>
+<script type="text/javascript" src="js/snow.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.present').click(function(){
+		$('.xmas').animate({'opacity':1},1000);
+		$(this).hide();
+		})
+	})
+
+</script>
+<link href="css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="snow">
+    	<div class="ground"></div>
+  <div class="bell">
+    		<div class="line"></div>
+    		<div class="bell1">
+        		<span></span>
+            	<span></span>
+            	<span></span>
+        	</div>
+   	  </div>
+      <div class="tree">
+         	<div class="top tree-bo">
+            	<div class="shadow"></div>
+            </div>
+            <div class="mid tree-bo">
+           	  <div class="shadow"></div>
+           </div>
+           <div class="bot tree-bo">
+            	<div class="shadow"></div>
+            </div>
+            <div class="wood">
+            	<div class="w-shadow"></div>
+                <div class="w-botshadow"></div>
+                <div class="bot-shadow"></div>
+            </div>
+            
+      </div>
+      <div class="present">
+      <div class="make">Make a wish!</div>
+      	<div class="r-shadow"></div>
+        <div class="golden1"></div>
+         <div class="golden2"></div>
+      </div>
+      <div class="xmas">Merry Christmas！<br>
+      <span class="f48">My best wishes for you!</span>
+      <p class="f24">——By Monster</p></div>
+    </div>
+</body>
+</html>
